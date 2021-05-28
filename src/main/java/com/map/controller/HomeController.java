@@ -36,4 +36,25 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value="/main", method = RequestMethod.GET)
+	public String main(Model model) {
+		logger.info("메인 페이지");
+		
+		return "main";
+	}
+	
+	@RequestMapping(value="/youtube", method = RequestMethod.GET)
+	public String youTube(Model model) {
+		logger.info("메인 페이지");
+		
+		return "youtube";
+	}
+	
+	@RequestMapping(value="/kakao", method = RequestMethod.GET)
+	public String kakao(Model model) {
+		logger.info("메인 페이지");
+		
+		return "kakaomap";
+	}
+	
 }
