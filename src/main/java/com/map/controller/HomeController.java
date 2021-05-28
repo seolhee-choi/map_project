@@ -38,21 +38,21 @@ public class HomeController {
 	
 	@RequestMapping(value="/main", method = RequestMethod.GET)
 	public String main(Model model) {
-		logger.info("메인 페이지");
+		logger.info("메인 페이지2");
 		
 		return "main";
 	}
 	
 	@RequestMapping(value="/youtube", method = RequestMethod.GET)
 	public String youTube(Model model) {
-		logger.info("메인 페이지");
+		logger.info("유투브 페이지");
 		
 		return "youtube";
 	}
 	
 	@RequestMapping(value="/kakao", method = RequestMethod.GET)
 	public String kakao(Model model) {
-		logger.info("메인 페이지");
+		logger.info("카카오맵 페이지");
 		
 		return "kakaomap";
 	}
