@@ -3,39 +3,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <title>Youtube vedio search</title>
+    <meta charset="utf-8">
+    <title>지도</title>
+    
 </head>
 <body>
-    <div class="container">
-        <br/><br/>
-        <h1>TOMATO</h1>
-        <br/><br/>
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="search">
-            </div>
-            <br/>
-            <div class="form-group">
-                <input type="submit" class="btn btn-danger" value="Search">
-            </div> 
-        </form>
+<!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:100%;height:350px;"></div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div id="videos">
-
-                </div>
-            </div>
-        </div>
-
-    </div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dd704cd1d737f1f039cd1959d14775bd"></script>
 <script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
 
-
-
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption); 
 </script>
 </body>
-</html>>
+</html>

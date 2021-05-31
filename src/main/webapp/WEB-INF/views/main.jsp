@@ -9,29 +9,7 @@
     <title>Youtube vedio search</title>
 </head>
 <body>
-    <div class="container">
-        <br/><br/>
-        <h1>TOMATO</h1>
-        <br/><br/>
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="search">
-            </div>
-            <br/>
-            <div class="form-group">
-                <input type="submit" class="btn btn-danger" value="Search">
-            </div> 
-        </form>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div id="videos">
-
-                </div>
-            </div>
-        </div>
-
-    </div>
+    
 <script>
 
 

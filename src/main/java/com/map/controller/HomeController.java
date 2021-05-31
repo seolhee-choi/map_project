@@ -57,4 +57,11 @@ public class HomeController {
 		return "kakaomap";
 	}
 	
+	@RequestMapping(value="/map", method = RequestMethod.GET)
+	public String map(Model model) {
+		logger.info("카카오맵 페이지");
+		
+		return "map";
+	}
+	
 }
